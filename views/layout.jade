@@ -1,0 +1,40 @@
+doctype html
+html
+	head
+	//- jquery minified from google
+	script(src="https://code.jquery.com/jquery-2.1.4.min.js")
+	//- bootstrap 3.3.5 from maxcdn
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css")
+	//- Jumbotron
+	link(rel="stylesheet" href="css/jumbotron.css")
+	//- Leaflet
+	script(src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js')
+	link(href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css',rel='stylesheet')
+
+	script(type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+	script(src="js/gis.js")
+	title #{title}
+	body
+		div.container
+			
+			div.header.clearfix
+			
+				nav
+					ul.nav.nav-pills.pull-right
+						li(role="presentation")
+							a(href="/#") Home
+						//li(role="presentation")
+							a(href="/data/#") Data
+						//li(role="presentation")
+							a(href="/about/#") About
+						//li(role="presentation")
+							a(href="/contact/#") Contact
+				h3.text-muted #{title}
+			
+				
+			block content
+			div.footer
+				p #{copyright}
+
+		//- script(src="../../assets/js/ie10-viewport-bug-workaround.js")

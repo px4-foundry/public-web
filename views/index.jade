@@ -1,0 +1,36 @@
+extends layout
+
+block content
+	h3 #{slug}
+	h4 #{slug2}
+	div.jumbotron(id='map')
+		div.jumbotron(id='supertext',style="width:100%;height:100%")
+			
+				
+	div.row.marketing
+		#before
+		div.col-lg-6
+			h3 
+				a Live Data
+			p Data collected by our network of sensors is stored, processed and made ready to use in seconds
+		div.col-lg-6 
+			h3 
+				a External Data
+			p ConnectedEAS' API platform can serve data from a large list of publicly avaliable APIs in the same sets as measurments that come from our sensor network
+	div.row.marketing
+		div.col-lg-6
+			h3 
+				a Modelling Applications
+			p The same cloud based infrastructure provides an elastic framework for running ultra high complexity hydrodynamic simulations
+			
+		div.col-lg-6
+			h3 
+				a Describe your data once
+			p Describe a data set using a recipie style API once and recieve fresh, timley data for the lifetime of a project, all stored in ConnectedEAS' virtualized infrastructure
+	div.row.marketing
+		div.col-lg-12
+			h3
+				a ConnectedEAS' infrastructure, your data 
+			p Integrate sensors and reporting tools into our network of collecters or post directly to our data-collecter API
+		//- Provide your access token
+		
